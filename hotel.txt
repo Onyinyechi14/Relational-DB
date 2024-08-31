@@ -1,0 +1,25 @@
+Convert each entity and relationship into a table.
+
+Tables and Their Schemas
+Hotel Table
+Columns: HotelID (Primary Key), Name, Location
+
+
+Guest Table
+Columns: GuestID (Primary Key), Name, Address
+
+Reservation Table
+Columns: ReservationID (Primary Key), CheckInDate, CheckOutDate, HotelID (Foreign Key), GuestID (Foreign Key)
+4. Define Foreign Keys
+In the Reservation table, include foreign keys that reference the primary keys of related tables:
+
+HotelID in Reservation references HotelID in Hotel.
+GuestID in Reservation references GuestID in Guest.
+Example Relational Diagram
+Hotel (HotelID, Name, Location)
+Guest (GuestID, Name, Address)
+Reservation (ReservationID, CheckInDate, CheckOutDate, HotelID [FK], GuestID [FK])
+Here’s how you can visualize the relational diagram:
+
+Hotel table connected to the Reservation table through HotelID.
+Guest table connected to the Reservation table through GuestID.
